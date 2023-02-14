@@ -1,2 +1,2 @@
-window.onload = startGame;
+window.onload = startGame();
 startButton.addEventListener('click', startGame);

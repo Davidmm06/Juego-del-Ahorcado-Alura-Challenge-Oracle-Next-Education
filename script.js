@@ -48,7 +48,11 @@ const endGame = () => {
     alert("Fin del juego");
     const { children } =  wordContainer;
     for(let i = 0; i < children.length; i++) {
-            children[i].classList.toggle('hidden');
+            // children[i].classList.toggle('hidden');
+            let hidden = children[i].classList.contains('hidden');
+            if (hidden) {
+              children[i].classList.remove('hidden');
+            }
     }
 }
 
